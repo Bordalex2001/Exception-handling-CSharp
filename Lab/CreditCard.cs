@@ -2,7 +2,7 @@
 
 namespace Lab
 {
-    class CreditCard
+    internal class CreditCard
     {
         public string CardNumber
         {
@@ -16,7 +16,7 @@ namespace Lab
                 {
                     if (value.Length != 16)
                     {
-                        throw new Exception("Total card number length cannot be less or greater than 16");
+                        throw new Exception("Card number length cannot be less or greater than 16");
                     }
                     else
                     {
@@ -120,7 +120,7 @@ namespace Lab
                 {
                     if (value < 1 || value > 12)
                     {
-                        throw new Exception("Value of a month cannot be less than 1 or bigger than 12; ");
+                        throw new Exception("Value of a month cannot be less than 1 or bigger than 12");
                     }
                     else
                     {
